@@ -30,6 +30,7 @@ app.get('/get-prediction', async (req, res) => {
     }
 });
 
+
 // Start the Node.js server
 app.listen(port, () => {
     console.log(`Node.js server is running on http://localhost:${port}`);

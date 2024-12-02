@@ -10,6 +10,10 @@ with open("models/solarpower_model.pkl", "rb") as f:
 class Input(BaseModel):
     parameters: list
 
+@api.get("/")
+def temp():
+    return {"Hello World"}
+
 
 @api.post("/predict")
 def predict(data: Input):
